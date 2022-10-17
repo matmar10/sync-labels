@@ -1,5 +1,5 @@
 {
-  "name": "@matmar10/sync-labels",
+  "name": "sync-labels",
   "version": "0.0.1",
   "description": "Github action to automatically sync labels in the given repo based on a rule set.",
   "main": "index.js",
