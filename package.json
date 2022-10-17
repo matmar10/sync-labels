@@ -1,6 +1,6 @@
 {
   "name": "sync-labels",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Github action to automatically sync labels in the given repo based on a rule set.",
   "main": "index.js",
   "scripts": {
