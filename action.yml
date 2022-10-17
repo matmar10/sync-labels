@@ -1,0 +1,32 @@
+
+name: sync-labels
+
+description: Automatically sync labels in the given repo based on a rule set.
+
+branding:
+  icon: check-circle
+  color: green
+
+inputs:
+  github_token:
+    required: true
+    description: A token with access to your repository scoped in as a secret
+  repository:
+    required: true
+    description: Github owner & repository (as "owner/repository")
+  config_path:
+    required: false
+    description: The path or URL to look for the label configuration in.
+    default: './.github/labels.yml'
+  dry_run:
+    required: false
+    description: Calculate the required label changes but do not apply them
+    default: 'false'
+  allow_added_labels:
+    required: false
+    description: Allow additional labels in the repo, and don't delete them
+    default: 'false'
+
+runs:
+  using: node16
+  main: dist/index.js

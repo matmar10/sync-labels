@@ -1,0 +1,115 @@
+###
+# https://www.conventionalcommits.org/en/v1.0.0/
+###
+- name: "type: bug"
+  color: "e11d21"
+  aliases:
+    - bug
+    - fix
+  description: Something is not working as expected
+- name: "type: feature"
+  color: "1d7a4a"
+  aliases:
+    - enhancement
+    - feature
+  description: New functionality being added
+- name: "type: build"
+  color: "169F90"
+  aliases:
+    - build
+    - build system
+  description: Modifying the source code build system
+- name: "type: chore"
+  color: "f9e5a6"
+  aliases:
+    - chore
+    - misc
+    - task
+  description: General code maintenance that otherwise doesn't fit with a category
+- name: "type: ci/cd"
+  color: "d98Be2"
+  aliases:
+    - ci/cd
+    - continuous integration
+    - ci
+    - cd
+  description: Updates or changes to the CI/CD pipeline (e.g. Github Actions related)
+- name: "type: documentation"
+  color: "49d8cd"
+  aliases:
+    - documentation
+    - docs
+  description: Adding or updating documentation for this repository
+- name: "type: style"
+  color: "444969"
+  aliases:
+    - style
+    - code style
+  description: Changins to coding style or formatting to comply with company standards
+- name: "type: refactor"
+  color: "c42101"
+  aliases:
+    - refactor
+  description: Rework to the code that does not otherwise changing it functionally
+- name: "type: performance"
+  color: "4f02f4"
+  aliases:
+    - performance
+    - perf
+  description: Changes aimed at improving performance
+- name: "type: test"
+  color: "c42101"
+  aliases:
+    - test
+    - tests
+    - unit
+    - e2e
+    - unit test
+    - e2e test
+  description: Adding or updating test coverage of any kind
+
+# other conventional commit stuff
+
+- name: "BREAKING CHANGE"
+  color: "990000"
+  aliases:
+    - breaking
+    - breaking-change
+    - deprecation
+  description: Previously supported functionaly is removed by this change
+
+###
+# non-conventional commit
+###
+
+# priority
+- name: "priority: low"
+  color: "009800"
+  description: Low priority
+- name: "priority: medium"
+  color: "fbca04"
+  description: Medium priority
+- name: "priority: high"
+  color: "eb6420"
+  description: High priority, as in we should be working on this!
+- name: "priority: critical"
+  color: "e11d21"
+  description: Critical priority, as in DROP EVERYTHING AND FIX THIS NOW!
+
+# status
+- name: "status: wontfix"
+  color: "cccccc"
+  aliases:
+    - wontfix
+    - "wont-fix"
+  description: After review & deliveration, decided not to make the change
+- name: "status: duplicate"
+  color: "cccccc"
+  aliases:
+    - duplicate
+  description: This issue is a duplicate of an existing issue
+- name: "status: blocked"
+  color: "990000"
+  aliases:
+    - blocked
+  description: Work cannot proceed on this issue
